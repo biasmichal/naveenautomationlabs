@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Playwright Test",
+      "type": "pwa-node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+      "args": [
+        "${workspaceFolder}/node_modules/@playwright/test/lib/cli.js",
+        "test",
+        "-g",
+        "Login_ShouldSucceed",
+        "--project=chromium"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
